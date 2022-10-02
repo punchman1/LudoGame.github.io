@@ -1,0 +1,48 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+     background-color: rgb(456, 497, 81);
+
+}
+.container
+{
+     width: 70%;margin: auto; text-align: center;
+}
+
+
+.dice
+{
+     text-align: center; 
+     width: 40%; 
+ display:inline-block; 
+ padding:0px; 
+ margin:0px;
+}
+
+h1{ 
+     margin: 30px;
+     text-shadow: 5px 5px white;
+     font-size: 6rem;
+     color: rgb(90, 7, 7);
+     font-family:'Tiro Telugu', serif;
+     ;
+}
+
+p{
+     font-size: 3rem; color: blue; 
+     text-shadow: 1px 1px white;
+}
+
+button{
+     padding: 10px;
+     border: none;
+     background-color: #3267bf;
+     width: 100px ;
+}
+
+img{
+     width: 50%;
+}

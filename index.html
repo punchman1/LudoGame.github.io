@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+     <div class="container">
+          <h1>Ludo Game</h1>
+          <div id="flexi">
+          <div class="dice">
+               <p>Player1</p>
+               <img src="images/dice1.png" id="check1">
+
+          </div>
+          <div class="dice">
+               <p>Player2 </p>
+               <img src="images/dice1.png" id="check2">
+
+          </div>
+     </div>
+          <div>
+               <button onclick="ludogame()">Click Me</button>
+          </div>
+
+     </div>
+
+
+     <script>
+          ludogame = () =>{
+           const Play1= Math.floor(Math.random()*6)+1;
+           const Player1dice=`images/dice${Play1}.png`;
+           document.getElementById('check1').setAttribute('src',Player1dice);
+
+
+
+           
+           const Play2= Math.floor(Math.random()*6)+1;
+           const Player2dice=`images/dice${Play2}.png`;
+           document.getElementById('check2').setAttribute('src',Player2dice);
+
+
+           if(Play1>Play2)
+           document.querySelector('h1').innerHTML="Player1 won :) ";
+           else if(Play2>Play1)
+           document.querySelector('h1').innerHTML="Player2 won :) ";
+           else
+           document.querySelector('h1').innerHTML="DRAW";
+
+          }
+     </script>
+</body>
+</html>
